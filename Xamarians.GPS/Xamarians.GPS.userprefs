@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{217CBD70-AF82-4FC5-9CD4-7BC51090DAF6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Xamarians.GPS.iOS/GPSServiceIOS.cs">
+    <Files>
+      <File FileName="GPSTestApp/GPSTestApp.iOS/AppDelegate.cs" Line="26" Column="57" />
+      <File FileName="Xamarians.GPS/Postion.cs" Line="1" Column="1" />
+      <File FileName="Xamarians.GPS/PositionExtensions.cs" Line="1" Column="1" />
+      <File FileName="Xamarians.GPS/packages.config" Line="1" Column="1" />
+      <File FileName="Xamarians.GPS/IGPSService.cs" Line="1" Column="1" />
+      <File FileName="Xamarians.GPS/GPSService.cs" Line="1" Column="1" />
+      <File FileName="Xamarians.GPS.Droid/GPSContinuousListener.cs" Line="1" Column="1" />
+      <File FileName="Xamarians.GPS.Droid/GPSServiceAndroid.cs" Line="63" Column="54" />
+      <File FileName="Xamarians.GPS.Droid/GPSSingleListener.cs" Line="1" Column="1" />
+      <File FileName="Xamarians.GPS.iOS/GPSServiceIOS.cs" Line="1" Column="1" />
+      <File FileName="Xamarians.GPS.iOS/GPSSingleUpdateDelegate.cs" Line="1" Column="1" />
+      <File FileName="GPSTestApp/GPSTestApp.Droid/MainActivity.cs" Line="21" Column="13" />
+      <File FileName="GPSTestApp/GPSTestApp/TestPage.cs" Line="1" Column="1" />
+      <File FileName="GPSTestApp/GPSTestApp.iOS/Main.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Sample.GPSTestApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.ItemProperties.Xamarians.GPS.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+</Properties>
