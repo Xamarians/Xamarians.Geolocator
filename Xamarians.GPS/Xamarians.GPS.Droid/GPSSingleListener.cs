@@ -272,7 +272,7 @@ namespace Xamarians.GPS.Droid
             {
                 if (_bestLocation == null)
                 {
-                    if (_completionSource.TrySetCanceled() && _finishedCallback != null)
+                    if (_completionSource.TrySetException(new TimeoutException()) && _finishedCallback != null)
                     {
                         _finishedCallback();
                     }

@@ -12,8 +12,8 @@ namespace GPSTestApp
         Position currentPosition;
         public TestPage()
         {
-            location = new Label() {HorizontalOptions=LayoutOptions.Center, HorizontalTextAlignment=TextAlignment.Center };
-            locationOnPositionChanged = new Label() { Text="Changed Position - getting.... ", TextColor=Color.Red, HorizontalOptions = LayoutOptions.Center, HorizontalTextAlignment = TextAlignment.Center };
+            location = new Label() {HorizontalOptions = LayoutOptions.Center, HorizontalTextAlignment = TextAlignment.Center };
+            locationOnPositionChanged = new Label() { Text="Changed Position - getting....", TextColor=Color.Red, HorizontalOptions = LayoutOptions.Center, HorizontalTextAlignment = TextAlignment.Center };
             var btnGetLocation = new Button()
             {
                 TextColor = Color.White,
@@ -69,19 +69,25 @@ namespace GPSTestApp
 
         private async Task<Position> GetCurrentLocation()
         {
-            GPSService.Instance.DesiredAccuracy = 100;
-            var postion = await GPSService.Instance.GetPositionAsync(System.Threading.CancellationToken.None);
-            if (postion != null)
-                return postion;
-            else
+            try
+            {
+                GPSService.Instance.DesiredAccuracy = 100;
+                var postion = await GPSService.Instance.GetPositionAsync(System.Threading.CancellationToken.None);
+                if (postion != null)
+                    return postion;
+                else
+                    return new Position() { Latitude = 0, Longitude = 0 };
+            }
+            catch(Exception ex)
+            {
                 return new Position() { Latitude = 0, Longitude = 0 };
+            }
         }
 
         bool isEvenCount;
         private  void Instance_PositionChanged(object sender, PositionEventArgs e)
         {
             isEvenCount = !isEvenCount;
-
             if (e.Position != null)
             {
                 locationOnPositionChanged.TextColor = isEvenCount ? Color.Blue : Color.Red;

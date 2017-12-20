@@ -301,7 +301,6 @@ namespace Xamarians.GPS.Droid
         {
             return new TimeSpan(TimeSpan.TicksPerMillisecond * time);
         }
-
         /// <summary>
         ///     Handles the <see cref="E:PositionError" /> event.
         /// </summary>

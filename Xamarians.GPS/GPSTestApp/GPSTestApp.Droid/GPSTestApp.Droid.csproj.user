@@ -3,5 +3,6 @@
   <PropertyGroup>
     <ProjectView>ProjectFiles</ProjectView>
     <SelectedDevice>Motorola Moto G %284%29</SelectedDevice>
+    <DefaultDevice>Android_Accelerated_x86</DefaultDevice>
   </PropertyGroup>
 </Project>

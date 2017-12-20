@@ -84,7 +84,7 @@ namespace Xamarians.GPS.iOS
                         }
                         else
                         {
-                            tcs.TrySetCanceled();
+                            tcs.TrySetException(new TimeoutException());
                         }
 
                         StopListening();
