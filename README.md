@@ -52,4 +52,4 @@ Privacy - Location Usage Description
 
 
 ### For any issue with library please report here 
-https://github.com/Xamarians/MediaPlayer/issues/new
+https://github.com/Xamarians/Xamarians.Geolocator/issues/new
