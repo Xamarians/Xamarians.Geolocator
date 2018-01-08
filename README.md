@@ -1,10 +1,10 @@
 # Xamarians.Geolocator
-Cross platform library to get current location and to continuesly listen to location
+Cross platform library to get current location and to continously listening to location
 
-First install package from nuget using following command -
+First install package from nuget using the following command -
 ## Install-Package Xamarians.GPS -Version 1.0.2
 
-You can integrate locator in you Xamarin Form application using following code:
+You can integrate locator in you Xamarin Form application using the following code:
 
  Shared Code -
  
@@ -15,6 +15,10 @@ You can integrate locator in you Xamarin Form application using following code:
 It get current position-
 ```c#
 var postion = await GPSService.Instance.GetPositionAsync(CancellationToken.None);
+```
+It get current position with customized timeout-
+```c#
+var postion = await GPSService.Instance.GetPositionAsync(12000, CancellationToken.None);
 ```
 To start listening to position continuously-
 ```c#
